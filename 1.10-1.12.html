@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Курс JavaScript</title>
+	<script>
+        let education = ["Московский государственный институт электронной техники,", "СПБГУ"];
+        let discipline = ["Информатика","Основы програмирования","Инженерная графика"];
+        let cock = {
+            surname:'Карамзин ',
+            name:' Виктор ',
+            lastname:' Витальевич',
+            ocupation:'Преподователь специальных дисциплин',
+            degree:'Высший',
+            category:'Первая',
+            education,
+            discipline,
+            
+        };
+        let line = `
+            <h2> ${cock.surname} ${cock.name} ${cock.lastname}
+            </h2> 
+            <p><i>Должность:</i> ${cock.ocupation}<p>
+            <p><i>Уровень образования:</i> ${cock.degree}<p>
+            <p><i>Категория:</i> ${cock.category}<p>
+            <i>Образование:</i> ${cock.education[0]}<p>${cock.education[1]}<p>
+			<i>Дисциплина:</i><ul><li>${cock.discipline[0]}</li><li>${cock.discipline[1]}</li><li>${cock.discipline[2]}</li></ul>
+            `;
+	</script>
+</head>
+
+<body>
+	
+	<header>
+		<h1 align = "center">Введение в JavaScript</h1>
+	</header>	
+	<center>
+	    <div class="content">
+		    <script>
+            /*document.write(cock.surname);
+            document.write(cock.name);
+            document.write(cock.lastname);
+            document.write('<br>Уровень образования: ' + cock.degree);
+            document.write('<br>Категория: ' + cock.category);
+            document.write('<br>Образование: ' + cock.education);
+            document.write('<br>Преподоваемая дисциплина: ' + cock.discipline);*/
+            document.write(line);
+		    </script>
+	    </div>
+    </center>
+	
+	<footer align = "center">
+		<h3>Добро пожаловать на pechora_PROger</h3>
+		<a href="https://vk.com/pechora_proger" target="__blank">pechora_PROger</a>
+	</footer>
+
+</body>
+</html>
